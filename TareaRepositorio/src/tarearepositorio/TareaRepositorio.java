@@ -20,12 +20,15 @@ public class TareaRepositorio {
         // TODO code application logic here
         
         System.out.println("Hola a Todos");
-        System.out.println("INGRESE LA CANTIDAD DE HORAS TRABAJADAS");
-        Scanner entrada =new Scanner(System.in);
-        int horas=entrada.nextInt();
-        Calculo calculo=new Calculo();
-        int total=calculo.CalcularHoras(horas);
-        System.out.println("El valor total por las "+horas+"trabajadas es de "+total);
+        System.out.println("Ingrese dos valores");
+        Scanner entrada=new Scanner(System.in);        
+        System.out.println("Ingrese el primero");
+        int valor1=entrada.nextInt();        
+        System.out.println("Ingrese el segundo");
+        int valor2=entrada.nextInt();
+        int total=valor1+valor2;
+        System.out.println("El total es"+total);
+        
     }
     
 }
